@@ -25,7 +25,8 @@ function draw() {
   for (let wall of walls) {
     wall.show();
   }
-  particle.update(noise(xoff) * width, noise(yoff) * height);
+  //particle.update(noise(xoff) * width, noise(yoff) * height);
+  particle.update(mouseX,mouseY)
   particle.show();
   particle.look(walls);
 
